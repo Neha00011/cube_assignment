@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Perfume Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with Background Image -->
+    <header class="hero-header">
+      <!-- Navbar -->
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <img src="assets/GTG.png" alt="Logo" />
+        </div>
+        <nav class="navbar-center">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+
+          <a href="#">Fragrances</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="navbar-right">
+          <img src="assets/search_icon.png" alt="Search Icon" />
+          <button>Shop Now</button>
+        </div>
+      </div>
+
+      <!-- Hero Text Content -->
+      <div class="hero-content">
+        <div class="award-badge">
+          <img src="assets/Medal.png" alt="Medal Icon" />
+          <span>Awarded the best perfume in the world</span>
+        </div>
+
+        <h1 class="headline">Live your best life</h1>
+
+        <div class="hero-stats">
+          <div class="stat">10x<br /><span>Power</span></div>
+          <div class="stat">9<br /><span>Ingredients</span></div>
+          <div class="stat">20K+<br /><span>Happy Customers</span></div>
+        </div>
+
+        <button id="hero-shop-btn">Shop Now</button>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="features-container">
+        <div class="feature-item">
+          <img src="assets/Heart.png" alt="Guarantee Icon" />
+          <span>30-day Guarantee</span>
+        </div>
+
+        <div class="feature-item">
+          <img src="assets/Globe.png" alt="Shipping Icon" />
+          <span>Worldwide Shipping</span>
+        </div>
+
+        <div class="feature-item">
+          <img src="assets/Truck.png" alt="Delivery Icon" />
+          <span>Fast Delivery</span>
+        </div>
+
+        <div class="feature-item">
+          <img src="assets/Plant.png" alt="Eco Icon" />
+          <span>Eco-Certified</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scent Section -->
+    <section class="scent-section">
+      <div class="scent-container">
+        <!-- Left Text Content -->
+        <div class="scent-text">
+          <p class="scent-subheading">9 POWERFUL SCENTS</p>
+          <h2 class="scent-heading">All of the Best Ingredients</h2>
+          <h2 class="scent-heading">None of the Compromise</h2>
+          <p class="scent-description">
+            GTG delivers
+            <span id="span-id">10x longer-lasting fragrance</span> with our
+            advanced concentration formula engineered for all day projection and
+            exceptional sillage.
+          </p>
+          <button id="scent-section-btn">View All Fragrances</button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="scent-image">
+          <img src="assets/large_perfume.png" alt="Scent Product Image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="product-left">
+        <div class="main-image">
+          <img src="assets/main_perfume.png" alt="Main Perfume" />
+        </div>
+        <div class="thumbnail-grid">
+          <img src="assets/img2.png" alt="Thumb" />
+          <img src="assets/icon5.png" alt="Thumb" />
+          <img src="assets/img3.png" alt="Thumb" />
+          <img src="assets/img4.png" alt="Thumb" />
+          <img src="assets/img2.png" alt="Thumb" />
+          <img src="assets/icon5.png" alt="Thumb" />
+          <img src="assets/img3.png" alt="Thumb" />
+          <img src="assets/img4.png" alt="Thumb" />
+        </div>
+      </div>
+
+      <div class="product-right">
+        <h2>GTG Perfumes</h2>
+        <div class="rating">
+          <div class="stars">
+            <img src="assets/green_star_full.png" alt="Star" />
+            <img src="assets/green_star_full.png" alt="Star" />
+            <img src="assets/green_star_full.png" alt="Star" />
+            <img src="assets/green_star_full.png" alt="Star" />
+            <img src="assets/green_star_half.png" alt="Star" />
+          </div>
+          <span>4.7 (999+ reviews)</span>
+        </div>
+
+        <p class="product-description">
+          Experience the timeless allure backed by modern artistry, captured in
+          every bottle of our fragrance. Crafted for those who seek to elevate
+          their essence with purpose and sophistication.
+        </p>
+
+        <!-- Subscription Card -->
+        <div class="subscription-card">
+          <div class="label-banner">Most Popular</div>
+        
+          <div class="subscription-option">
+            <label>
+              <input type="radio" name="subscription" checked />
+              <span class="plan-title">Single Subscription</span>
+              <span class="price">
+                <strong>$99.99</strong> <s>$146</s>
+              </span>
+            </label>
+          </div>
+        
+          <div class="fragrance-choice">
+            <p class="sub-label">Choose a Fragrance <span class="tag">BEST SELLER</span></p>
+            <div class="fragrance-options">
+              <label class="fragrance">
+                <input type="radio" name="fragrance" checked />
+                <img src="assets/original.png" alt="Original" />
+                <span>Original</span>
+              </label>
+              <label class="fragrance">
+                <input type="radio" name="fragrance" />
+                <img src="assets/lily.png" alt="Lily" />
+                <span>Lily</span>
+              </label>
+              <label class="fragrance">
+                <input type="radio" name="fragrance" />
+                <img src="assets/rose.png" alt="Rose" />
+                <span>Rose</span>
+              </label>
+            </div>
+          </div>
+        
+          <div class="sampler-info">
+            <p class="sub-label">What's Included:</p>
+            <div class="sampler-types">
+              <div class="sampler">
+                <span>Every 30 Days</span>
+                <img src="assets/original.png" alt="Monthly" />
+              </div>
+              <div class="sampler">
+                <span>One Time <strong>(Free)</strong></span>
+                <img src="assets/lily.png" alt="Free Sampler" />
+              </div>
+            </div>
+            <ul class="features">
+              <li>1 Bottle Shipped Monthly</li>
+              <li><strong>Free</strong> Sampler For Original, Lily And Rose Fragrances</li>
+              <li><strong>50% OFF Shipping</strong></li>
+              <li>Pause Or Cancel Anytime After 3 Months Minimum</li>
+              <li>28 Day Money Back Guarantee*</li>
+            </ul>
+          </div>
+        
+        
+
+        
+          <button class="add-to-cart" style="width:100%">Add to Cart</button>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Special Edition Section -->
+    <section class="special-section">
+      <div class="special-container">
+        <!-- Left Image -->
+        <div class="special-image">
+          <img src="assets/special_perfume.png" alt="Perfume Bottle" />
+        </div>
+
+        <!-- Right Content -->
+        <div class="special-content">
+          <h2 class="special-title">The Ultimate Fragrance</h2>
+          <p class="special-subtitle">GTG Special Edition</p>
+
+          <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+              <img src="assets/Plant.png" alt="Plant Icon" class="card-icon" />
+              <h4 class="card-title">lorem ipsum</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                adipisci corrupti a eveniet ipsam iure ex explicabo totam
+                aperiam! Ea tempore praesentium dolore tempora asperiores nihil
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+              <img src="assets/Truck.png" alt="Truck Icon" class="card-icon" />
+              <h4 class="card-title">lorem ipsum</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                laborum mollitia itaque fuga et, quibusdam modi id delectus
+                placeat repudiandae sapiente ratione
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+              <img src="assets/Globe.png" alt="Globe Icon" class="card-icon" />
+              <h4 class="card-title">lorem ipsum</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                optio culpa laborum officiis, asperiores laudantium. Autem
+                cupiditate expedita, illum, neque incidunt reprehenderit
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card">
+              <img src="assets/Heart.png" alt="Heart Icon" class="card-icon" />
+              <h4 class="card-title">lorem ipsum</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti nemo inventore id eligendi? Unde mollitia, ipsa, culpa
+                ea numquam iste natus, expedita ut quibusdam animi explicabo est
+              </p>
+            </div>
+          </div>
+
+          <button class="white-btn">Try Velvet Whisper Today</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription-section">
+      <div class="subscription-wrapper">
+        <!-- Background Image Container -->
+        <div class="subscription-image-container">
+          <img
+            src="assets/subscription_bg.png"
+            alt="Perfume Subscription"
+            class="subscription-bg"
+          />
+
+          <!-- Text content placed above the image -->
+          <div class="subscription-content">
+            <p class="subscription-tag">Subscription</p>
+            <h2 class="subscription-heading">
+              Subscribe & save 20% on every perfume
+            </h2>
+
+            <!-- Buttons Grid -->
+            <div class="subscription-options">
+              <button class="option-btn">Lorem Ipsum</button>
+              <button class="option-btn">Lorem Ipsum</button>
+              <button class="option-btn">Lorem Ipsum</button>
+              <button class="option-btn">Lorem Ipsum</button>
+              <button class="option-btn">Lorem Ipsum</button>
+              <button class="option-btn">Lorem Ipsum</button>
+            </div>
+
+            <!-- Subscribe Now CTA -->
+            <button class="subscribe-btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection-section">
+      <div class="collection-container">
+        <!-- Left Content -->
+        <div class="collection-left">
+          <h2 class="collection-title">Our Collection</h2>
+
+          <!-- Accordion Box 1 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <strong>Signature Scents</strong>
+              <button class="accordion-toggle">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Discover our curated line of signature perfumes, designed to
+                become your daily companion.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Box 2 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <strong>Signature Scents</strong>
+              <button class="accordion-toggle">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Discover our curated line of signature perfumes, designed to
+                become your daily companion.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Box 3 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <strong>Signature Scents</strong>
+              <button class="accordion-toggle">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Discover our curated line of signature perfumes, designed to
+                become your daily companion.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Box 4 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <strong>Signature Scents</strong>
+              <button class="accordion-toggle">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Discover our curated line of signature perfumes, designed to
+                become your daily companion.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="collection-right">
+          <img src="assets/collection_img.png" alt="Collection Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stats-container">
+        <!-- Stat 1 -->
+        <div class="stat-box">
+          <h3 class="stat-percent">84%</h3>
+          <p class="stat-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque!
+          </p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="stat-box">
+          <h3 class="stat-percent">78%</h3>
+          <p class="stat-desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto.
+          </p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="stat-box">
+          <h3 class="stat-percent">89%</h3>
+          <p class="stat-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.
+          </p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="stat-box">
+          <h3 class="stat-percent">90%</h3>
+          <p class="stat-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <h2 class="comparison-title">Why GTG is the #1 Choice</h2>
+    
+      <div class="comparison-table">
+        <!-- Header Row -->
+        <div class="row header-row">
+          <div class="cell quality-cell">Qualities</div>
+          <div class="cell gtg-col">
+            <img src="assets/img1.png" alt="GTG" />
+            <span class="bold gtg-label">GTG</span>
+          </div>
+          <div class="cell">
+            <img src="assets/img2.png" alt="Arose" />
+            <span class="bold">Arose</span>
+          </div>
+          <div class="cell">
+            <img src="assets/img3.png" alt="Bella" />
+            <span class="bold">Bella</span>
+          </div>
+          <div class="cell">
+            <img src="assets/img4.png" alt="Daisies" />
+            <span class="bold">Daisies</span>
+          </div>
+        </div>
+    
+        <!-- Data Rows -->
+        <div class="row">
+          <div class="cell quality-cell">Potency Concentration</div>
+          <div class="cell gtg-col">10x</div>
+          <div class="cell">1x</div>
+          <div class="cell">1x</div>
+          <div class="cell">10x</div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Longevity</div>
+          <div class="cell check gtg-col"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+          <div class="cell check"></div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Sillage</div>
+          <div class="cell check gtg-col"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Bottle Design Score</div>
+          <div class="cell gtg-col">9</div>
+          <div class="cell">5</div>
+          <div class="cell">6</div>
+          <div class="cell">2</div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Blend and Harmony</div>
+          <div class="cell check gtg-col"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Skin Compatibility</div>
+          <div class="cell check gtg-col"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Scent Profile</div>
+          <div class="cell check gtg-col"></div>
+          <div class="cell check"></div>
+          <div class="cell cross"></div>
+          <div class="cell cross"></div>
+        </div>
+    
+        <div class="row">
+          <div class="cell quality-cell">Price vs. Quality</div>
+          <div class="cell check gtg-col"></div>
+          <div class="cell check"></div>
+          <div class="cell cross"></div>
+          <div class="cell check"></div>
+        </div>
+      </div>
+    
+      <button class="try-btn">Try It Risk-Free</button>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section class="about-section">
+      <!-- Top Image -->
+      <div class="about-image">
+        <img src="assets/about_us_img.png" alt="About Us Image" />
+      </div>
+
+      <!-- Two-column content -->
+      <div class="about-content">
+        <!-- Left -->
+        <div class="about-left">
+          <p class="founder-text">From the Founders</p>
+          <button class="about-btn">About Us</button>
+        </div>
+
+        <!-- Right -->
+        <div class="about-right">
+          <p class="about-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+            veritatis reprehenderit quisquam obcaecati dolore ab unde ad sequi
+            fuga, cumque saepe libero laudantium earum nemo?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+      <div class="testimonial-header">
+        <div>
+          <h2>What our customers are saying</h2>
+          <p>Real People, Real Reviews</p>
+        </div>
+        <div class="testimonial-nav">
+          <button class="arrow left">&#8592;</button>
+          <button class="arrow right">&#8594;</button>
+          
+        </div>
+      </div>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-track">
+          <!-- Testimonial Card -->
+          <div class="testimonial-card">
+            <div class="star">★★★★★</div>
+
+            <p class="review-text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Delectus enim quis porro nostrum inventore, fugiat quae cum
+               voluptatibus tempore? Vero, saepe voluptates."
+            </p>
+            <div class="profile">
+              <img src="assets/avatar.png" alt="User" />
+              <div class="profile-info">
+                <span>Name Surname</span><br />
+                <span>Position,Company Name</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="testimonial-card">
+            <div class="star">★★★★★</div>
+
+            <p class="review-text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Delectus enim quis porro nostrum inventore, fugiat quae cum
+               voluptatibus tempore? Vero, saepe voluptates."
+            </p>
+            <div class="profile">
+              <img src="assets/avatar.png" alt="User" />
+              <div class="profile-info">
+                <span>Name Surname</span><br />
+                <span>Position,Company Name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star">★★★★★</div>
+
+            <p class="review-text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Delectus enim quis porro nostrum inventore, fugiat quae cum
+               voluptatibus tempore? Vero, saepe voluptates."
+            </p>
+            <div class="profile">
+              <img src="assets/avatar.png" alt="User" />
+              <div class="profile-info">
+                <span>Name Surname</span><br />
+                <span>Position,Company Name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star">★★★★★</div>
+
+            <p class="review-text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Delectus enim quis porro nostrum inventore, fugiat quae cum
+               voluptatibus tempore? Vero, saepe voluptates."
+            </p>
+            <div class="profile">
+              <img src="assets/avatar.png" alt="User" />
+              <div class="profile-info">
+                <span>Name Surname</span><br />
+                <span>Position,Company Name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star">★★★★★</div>
+
+            <p class="review-text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Delectus enim quis porro nostrum inventore, fugiat quae cum
+               voluptatibus tempore? Vero, saepe voluptates."
+              
+            </p>
+            <div class="profile">
+              <img src="assets/avatar.png" alt="User" />
+              <div class="profile-info">
+                <span>Name Surname</span><br />
+                <span>Position,Company Name</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <!-- Left Side -->
+        <div class="faq-left">
+          <h2>FAQs</h2>
+          <p class="faq-subheading">
+            If you have any question that is not answered in our FAQs, we’d love
+            to hear from you.
+          </p>
+          <button class="faq-contact-btn">Get in Touch</button>
+        </div>
+
+        <!-- Right Side -->
+        <div class="faq-right">
+          <!-- FAQ Items -->
+          <div class="faq-item">
+            <p>Lorem ipsum dolor sit amet?</p>
+            <span class="faq-icon">+</span>
+          </div>
+          <hr />
+          <div class="faq-item">
+            <p>Lorem ipsum dolor sit amet?</p>
+            <span class="faq-icon">+</span>
+          </div>
+          <hr />
+          <div class="faq-item">
+            <p>Lorem ipsum dolor sit amet?</p>
+            <span class="faq-icon">+</span>
+          </div>
+          <hr />
+          <div class="faq-item">
+            <p>Lorem ipsum dolor sit amet?</p>
+            <span class="faq-icon">+</span>
+          </div>
+          <hr />
+          <div class="faq-item">
+            <p>Lorem ipsum dolor sit amet?</p>
+            <span class="faq-icon">+</span>
+          </div>
+          <hr />
+
+          <!-- See All Button -->
+          <div class="faq-see-all">
+            <a href="#"> See all FAQs <span class="arrow">→</span> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="newsletter-wrapper">
+       
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <!-- Logo at Top -->
+      <div class="footer-container">
+        <div class="footer-logo-top">
+          <img src="assets/logo2.png" alt="GTG Logo" />
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <!-- Middle: Navigation & Social -->
+        <div class="footer-middle">
+          <!-- Column 1 -->
+          <div class="footer-column">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Fragrance</a>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="footer-column">
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <!-- Column 3: Social Icons -->
+          <div class="footer-column">
+            <a href="#"
+              ><img src="assets/Facebook.png" alt="Facebook" /> Facebook</a
+            >
+            <a href="#"
+              ><img src="assets/Instagram.png" alt="Instagram" /> Instagram</a
+            >
+            <a href="#"><img src="assets/Vector.png" alt="Twitter X" /> X</a>
+          </div>
+        </div>
+
+        <!-- Right: Newsletter -->
+        <div class="footer-right">
+          <h4>
+            Join our newsletter to stay up to date on features and releases
+          </h4>
+
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="brown-btn">Subscribe</button>
+          </div>
+
+          <p class="privacy-text">
+            By subscribing you agree with our
+            <a href="#" class="underline">Privacy Policy</a>
+            and provide consent to receive updates from our company.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
