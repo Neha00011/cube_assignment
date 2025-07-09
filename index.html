@@ -21,8 +21,17 @@
         </div>
         <nav class="navbar-center">
           <a href="#">Home</a>
-          <a href="#">Shop</a>
-
+          <div class="dropdown">
+            <a href="#" class="dropdown-trigger">Shop</a>
+            <div class="dropdown-menu">
+              <a href="#">All Products</a>
+              <a href="#">Signature Collection</a>
+              <a href="#">Limited Edition</a>
+              <a href="#">Gift Sets</a>
+              <a href="#">Samplers</a>
+              <a href="#">Accessories</a>
+            </div>
+          </div>
           <a href="#">Fragrances</a>
           <a href="#">About Us</a>
           <a href="#">Blog</a>
@@ -138,67 +147,284 @@
           their essence with purpose and sophistication.
         </p>
 
+
+
         <!-- Subscription Card -->
-        <div class="subscription-card">
-          <div class="label-banner">Most Popular</div>
+        <div class="single-subscription-box subscription-option active" id="single-subscription">
+          <!-- Most Popular Banner -->
+          <div class="popular-banner">Most Popular</div>
         
-          <div class="subscription-option">
-            <label>
+          <!-- Header Row -->
+          <div class="header-row">
+            <label class="radio-label">
               <input type="radio" name="subscription" checked />
-              <span class="plan-title">Single Subscription</span>
-              <span class="price">
-                <strong>$99.99</strong> <s>$146</s>
-              </span>
+              <span>Single Subscription</span>
+            </label>
+            <div class="price">
+              <span class="current-price">$99.99</span>
+              <span class="original-price">$146</span>
+            </div>
+          </div>
+        
+          <!-- Choose Fragrance -->
+          <div class="section">
+            <p class="section-title">Choose a Fragrance</p>
+            <div class="fragrance-options">
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance" checked />
+                <span>Original</span>
+                <img src="assets/original.png" alt="Original" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance" />
+                <span>Lily</span>
+                <img src="assets/lily.png" alt="Lily" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance" />
+                <span>Rose</span>
+                <img src="assets/rose.png" alt="Rose" />
+                
+              </label>
+            </div>
+          </div>
+        
+          <!-- What's Included -->
+          <div class="section">
+            <p class="section-title">What's Included:</p>
+            <div class="inclusion-box">
+              <div class="plan every-30">
+                <p>Every 30 Days</p>
+                <img src="assets/original.png" alt="Monthly Bottle" />
+              </div>
+              <div class="plan one-time">
+                <p>One Time <span class="free">(Free)</span></p>
+                <div class="perfume-row">
+                  <img src="assets/original.png" alt="Original" />
+                  <img src="assets/lily.png" alt="Lily" />
+                  <img src="assets/rose.png" alt="Rose" />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Benefits -->
+          <ul class="benefits">
+            <li>1 Bottle Shipped Monthly</li>
+            <li><strong>Free</strong> Sampler For Original, Lily And Rose Fragrances</li>
+            <li><strong>50% OFF</strong> Shipping</li>
+            <li>Pause Or Cancel Anytime After 3 Months Minimum</li>
+            <li>28 Day Money Back Guarantee*</li>
+          </ul>
+        
+          <!-- Bottom Options -->
+          <div class="bottom-options">
+            <label class="option-row">
+              <input type="radio" name="switch-subscription" />
+              <span>Double Subscription</span>
+              <span class="option-price">$169.99</span>
+            </label>
+            <label class="option-row">
+              <input type="radio" name="switch-subscription" />
+              <span>Try Once</span>
+              <span class="option-price">$129.99</span>
             </label>
           </div>
         
-          <div class="fragrance-choice">
-            <p class="sub-label">Choose a Fragrance <span class="tag">BEST SELLER</span></p>
-            <div class="fragrance-options">
-              <label class="fragrance">
-                <input type="radio" name="fragrance" checked />
-                <img src="assets/original.png" alt="Original" />
-                <span>Original</span>
-              </label>
-              <label class="fragrance">
-                <input type="radio" name="fragrance" />
-                <img src="assets/lily.png" alt="Lily" />
-                <span>Lily</span>
-              </label>
-              <label class="fragrance">
-                <input type="radio" name="fragrance" />
-                <img src="assets/rose.png" alt="Rose" />
-                <span>Rose</span>
-              </label>
-            </div>
-          </div>
-        
-          <div class="sampler-info">
-            <p class="sub-label">What's Included:</p>
-            <div class="sampler-types">
-              <div class="sampler">
-                <span>Every 30 Days</span>
-                <img src="assets/original.png" alt="Monthly" />
-              </div>
-              <div class="sampler">
-                <span>One Time <strong>(Free)</strong></span>
-                <img src="assets/lily.png" alt="Free Sampler" />
-              </div>
-            </div>
-            <ul class="features">
-              <li>1 Bottle Shipped Monthly</li>
-              <li><strong>Free</strong> Sampler For Original, Lily And Rose Fragrances</li>
-              <li><strong>50% OFF Shipping</strong></li>
-              <li>Pause Or Cancel Anytime After 3 Months Minimum</li>
-              <li>28 Day Money Back Guarantee*</li>
-            </ul>
-          </div>
-        
+          <!-- Add to Cart Button -->
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
         
 
+
+        <div class="double-subscription subscription-option" id="double-subscription">
+          <!-- Back Button -->
+          <button class="back-to-single-btn">← Back to Single Subscription</button>
+          
+          <div class="header-row">
+            <label class="radio-label">
+              <input type="radio" name="subscription" checked />
+              <span>Double Subscription</span>
+            </label>
+            <div class="price">
+              <span class="current-price">$169.99</span>
+              <span class="original-price">$146</span>
+            </div>
+          </div>
         
-          <button class="add-to-cart" style="width:100%">Add to Cart</button>
+          <div class="section">
+            <p class="section-title">Choose Fragrance 1</p>
+            <div class="fragrance-options">
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance1" checked />
+                <span>Original</span>
+                <img src="assets/original.png" alt="Original" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance1" />
+                <span>Lily</span>
+                <img src="assets/lily.png" alt="Lily" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance1" />
+                <span>Rose</span>
+                <img src="assets/rose.png" alt="Rose" />
+                
+              </label>
+            </div>
+          </div>
+        
+          <div class="section">
+            <p class="section-title">Choose Fragrance 2</p>
+            <div class="fragrance-options">
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance2" checked />
+                <span>Original</span>
+                <img src="assets/original.png" alt="Original" />
+              
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance2" />
+                <span>Lily</span>
+                <img src="assets/lily.png" alt="Lily" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance2" />
+                <span>Rose</span>
+                <img src="assets/rose.png" alt="Rose" />
+               
+              </label>
+            </div>
+          </div>
+        
+          <div class="section">
+            <p class="section-title">What's Included:</p>
+            <div class="inclusion-box">
+              <div class="plan every-30">
+                <p>Every 30 Days</p>
+                <img src="assets/original.png" alt="Monthly Bottle" />
+              </div>
+              <div class="plan one-time">
+                <p>One Time <span class="free">(Free)</span></p>
+                <div class="perfume-row">
+                  <img src="assets/original.png" alt="Original" />
+                  <img src="assets/lily.png" alt="Lily" />
+                  <img src="assets/rose.png" alt="Rose" />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <ul class=" try-benefits">
+            <li>1 Bottle Shipped Monthly</li>
+            <li><strong>Free</strong> Sampler For Original, Lily And Rose Fragrances</li>
+            <li><strong>50% OFF</strong> Shipping</li>
+            <li>Pause Or Cancel Anytime After 3 Months Minimum</li>
+            <li>28 Day Money Back Guarantee*</li>
+          </ul>
+        
+          <div class="try-once">
+            <label>
+              <input type="radio" name="subscription" />
+              <span>Try Once</span>
+            </label>
+            <span class="price">$129.99</span>
+          </div>
+          
+          <!-- Add to Cart Button -->
+          <button class="add-to-cart">Add to Cart</button>
         </div>
+
+        <div class="try-once-box subscription-option" id="try-once-subscription">
+          <!-- Back Button -->
+          <button class="back-to-single-btn">← Back to Single Subscription</button>
+          
+          <div class="header-row">
+            <label class="radio-label">
+              <input type="radio" name="plan" checked />
+              <span>Try Once</span>
+            </label>
+            <div class="price">
+              <span class="current-price">$129.99</span>
+              <span class="original-price">$146</span>
+            </div>
+          </div>
+        
+          <hr class="divider" />
+        
+          <div class="toggle-row">
+            <label class="toggle-option">
+              <input type="radio" name="pack-size" checked />
+              <span>Single</span>
+            </label>
+            <label class="toggle-option">
+              <input type="radio" name="pack-size" />
+              <span>Double</span>
+            </label>
+          </div>
+        
+          <div class="section">
+            <p class="section-title">Choose Fragrance 1</p>
+            <div class="fragrance-options">
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance1" checked />
+                <span>Original</span>
+                <img src="assets/original.png" alt="Original" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance1" />
+                <span>Lily</span>
+                <img src="assets/lily.png" alt="Lily" />
+               
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance1" />
+                <span>Rose</span>
+                <img src="assets/rose.png" alt="Rose" />
+                
+              </label>
+            </div>
+          </div>
+        
+          <div class="section">
+            <p class="section-title">Choose Fragrance 2</p>
+            <div class="fragrance-options">
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance2" checked />
+                <span>Original</span>
+                <img src="assets/original.png" alt="Original" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance2" />
+                <span>Lily</span>
+                <img src="assets/lily.png" alt="Lily" />
+                
+              </label>
+              <label class="fragrance-box">
+                <input type="radio" name="fragrance2" />
+                <span>Rose</span>
+
+                <img src="assets/rose.png" alt="Rose" />
+              </label>
+            </div>
+          </div>
+        
+          <ul class="try-benefits">
+            <li>1 Bottle Shipped Monthly</li>
+            <li>28 Day Money Back Guarantee*</li>
+          </ul>
+          
+          <!-- Add to Cart Button -->
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
         
       </div>
     </section>
