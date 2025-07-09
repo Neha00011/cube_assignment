@@ -66,3 +66,54 @@ dots.forEach((dot, idx) => {
 
 window.addEventListener("resize", updateSlider);
 window.addEventListener("load", updateSlider);
+
+// Subscription Card Navigation
+document.addEventListener("DOMContentLoaded", () => {
+  const subscriptionOptions = document.querySelectorAll(".subscription-option");
+
+  // Function to show specific subscription card
+  function showSubscriptionOption(targetSubscription) {
+    subscriptionOptions.forEach((option) => {
+      option.style.display = "none";
+      option.classList.remove("active");
+    });
+
+    const targetOption = document.getElementById(
+      targetSubscription + "-subscription"
+    );
+    if (targetOption) {
+      targetOption.style.display = "block";
+      targetOption.classList.add("active");
+    }
+  }
+
+  // Initialize with single subscription visible
+  showSubscriptionOption("single");
+
+  // Handle clicks on "Double Subscription" and "Try Once" option rows in single subscription card
+  const optionRows = document.querySelectorAll(
+    ".single-subscription-box .option-row"
+  );
+  optionRows.forEach((optionRow) => {
+    optionRow.addEventListener("click", function () {
+      const span = this.querySelector("span");
+      if (span) {
+        const text = span.textContent;
+
+        if (text.includes("Double Subscription")) {
+          showSubscriptionOption("double");
+        } else if (text.includes("Try Once")) {
+          showSubscriptionOption("try-once");
+        }
+      }
+    });
+  });
+
+  // Handle back to single subscription buttons
+  const backButtons = document.querySelectorAll(".back-to-single-btn");
+  backButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      showSubscriptionOption("single");
+    });
+  });
+});
